@@ -10,7 +10,7 @@ int main(){
     float area1, area2, pib1, pib2, pibPerCap1, pibPerCap2, densDemo1, densDemo2; //variáveis tipo float das cartas
     int bolPop, bolAre, bolPib, bolPoT, bolPPC, bolDeD, bolSuP; //variáveis booleanas auxiliares
     char resPopulac[7], resArea[7], resPib[7], resPontTur[7], resPibPerCap[7], resDensDemo[7], resSuperPoder[7]; //Variáveis para guardar o vencedor de cada modalidade
-    float superPoder1, superPoder2, aux1, aux2;
+    float superPoder1, superPoder2;
     //Apresentação do jogo e coleta de dados
 
     printf("Bem vindo ao Super Trunfo das Cidades!!!\n");
@@ -54,8 +54,7 @@ int main(){
 
     //Cálculo do Super Poder primeira carta
 
-    aux1 = (float)(1/densDemo2);
-    superPoder1 = (float)populacao1 + area1 + pib1 + (float)pontTur1 + pibPerCap1 + aux1;
+    superPoder1 = (float)populacao1 + area1 + pib1 + (float)pontTur1 + pibPerCap1 + (float)(1/densDemo1);
 
      //Carta 2
     printf("Vamos cadastrar a segunda carta!\n");
@@ -93,8 +92,8 @@ int main(){
     densDemo2 = (float)populacao2/area2;
 
     //Cálculo do Super Poder segunda carta
-    aux2= (float)(1/densDemo2);
-    superPoder2 = (float)populacao2 + area2 + pib2 + (float)pontTur2 + pibPerCap2 + aux2;
+ 
+    superPoder2 = (float)populacao2 + area2 + pib2 + (float)pontTur2 + pibPerCap2 + (float)(1/densDemo2);
    
     //Comparando dados das Cartas
    
