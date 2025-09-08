@@ -10,7 +10,7 @@ int main(){
     float area1, area2, pib1, pib2, pibPerCap1, pibPerCap2, densDemo1, densDemo2; //variáveis tipo float das cartas
     int bolPop, bolAre, bolPib, bolPoT, bolPPC, bolDeD, bolSuP; //variáveis booleanas auxiliares
     char resPopulac[7], resArea[7], resPib[7], resPontTur[7], resPibPerCap[7], resDensDemo[7], resSuperPoder[7]; //Variáveis para guardar o vencedor de cada modalidade
-    float superPoder1, superPoder2;
+    float superPoder1=0, superPoder2=0;
     //Apresentação do jogo e coleta de dados
 
     printf("Bem vindo ao Super Trunfo das Cidades!!!\n");
